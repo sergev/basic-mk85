@@ -1,22 +1,22 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file           : main.h
-  * @brief          : Header for main.c file.
-  *                   This file contains the common defines of the application.
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
-  * All rights reserved.</center></h2>
-  *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : main.h
+ * @brief          : Header for main.c file.
+ *                   This file contains the common defines of the application.
+ ******************************************************************************
+ * @attention
+ *
+ * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+ * All rights reserved.</center></h2>
+ *
+ * This software component is licensed by ST under BSD 3-Clause license,
+ * the "License"; You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at:
+ *                        opensource.org/licenses/BSD-3-Clause
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
@@ -53,10 +53,10 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-void lcd (unsigned int addr, uint8_t data);
-void key_wait (void);
-int key_scan (void);
-void delay_ms (unsigned int x);
+void lcd(unsigned int addr, uint8_t data);
+void key_wait(void);
+int key_scan(void);
+void delay_ms(unsigned int x);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
@@ -109,8 +109,7 @@ void delay_ms (unsigned int x);
 /* USER CODE BEGIN Private defines */
 #define KEYB_GPIO_Port PP1_GPIO_Port
 #define PPX_Pins (PP1_Pin | PP2_Pin | PP3_Pin)
-#define KBX_Pins (KB2_Pin | KB3_Pin | KB4_Pin | KB5_Pin | KB6_Pin |	\
-		KB7_Pin | KB8_Pin)
+#define KBX_Pins (KB2_Pin | KB3_Pin | KB4_Pin | KB5_Pin | KB6_Pin | KB7_Pin | KB8_Pin)
 #define KEYB_Pins (PPX_Pins | KBX_Pins)
 /* USER CODE END Private defines */
 

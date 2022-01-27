@@ -11,17 +11,17 @@
 #define ERR8 -8
 #define ERR9 -9
 #define ERR_EX -10
-#define DONE -11		/* normal termination */
+#define DONE -11 /* normal termination */
 
-#define RAMSTART 0x8000u	/* starting address of the original RAM */
+#define RAMSTART 0x8000u /* starting address of the original RAM */
 #define SCREEN_WIDTH 12
-#define SCREEN_RAM_SIZE (SCREEN_WIDTH*8)
+#define SCREEN_RAM_SIZE (SCREEN_WIDTH * 8)
 
 /* function prototypes */
-unsigned int read16 (unsigned int addr);
-void write16 (unsigned int addr, unsigned int data);
-uint64_t read64 (unsigned int addr);
-void write64 (unsigned int addr, uint64_t data);
-unsigned int read_string (unsigned int from, unsigned int dst);
+unsigned int read16(unsigned int addr);
+void write16(unsigned int addr, unsigned int data);
+uint64_t read64(unsigned int addr);
+void write64(unsigned int addr, uint64_t data);
+unsigned int read_string(unsigned int from, unsigned int dst);
 
 #endif
